@@ -43,6 +43,52 @@ const App = () => {
         });
     });
 
+    // Impact stats counter animation
+    function animateCounters() {
+        const counters = document.querySelectorAll('.impact-number');
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const isPercent = counter.textContent.includes('%');
+            let count = 0;
+            const duration = 1200;
+            const step = Math.ceil(target / (duration / 16));
+            function update() {
+                if (count < target) {
+                    count += step;
+                    if (count > target) count = target;
+                    counter.textContent = isPercent ? count + '%' : count;
+                    requestAnimationFrame(update);
+                } else {
+                    counter.textContent = target;
+                }
+            }
+            update();
+        });
+    }
+    const statsSection = document.getElementById('impact-stats');
+    if (statsSection) {
+        let statsAnimated = false;
+        const observer = new window.IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !statsAnimated) {
+                    animateCounters();
+                    statsAnimated = true;
+                }
+            });
+        }, { threshold: 0.3 });
+        observer.observe(statsSection);
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        const darkModeBtn = document.getElementById('darkModeToggle');
+        if (darkModeBtn) {
+            darkModeBtn.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                this.classList.toggle('active');
+                this.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+            });
+        }
+    });
+
     return (
         <div>
             <h1 className="scroll-animate">Welcome to the Hackathon!</h1>
