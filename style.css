@@ -357,6 +357,102 @@ nav a {
 .contact-btn:hover {
   background: #388e3c;
 }
+.pricing-section {
+  background: #f6f9f9;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.pricing-header h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.7rem;
+}
+.pricing-header p {
+  color: var(--primary);
+  font-size: 1.08rem;
+  margin-bottom: 2.2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pricing-plans {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.plan-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(99,204,202,0.08);
+  padding: 2rem 1.5rem 2.5rem 1.5rem;
+  flex: 1 1 260px;
+  max-width: 320px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.plan-card h3 {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.plan-price {
+  font-size: 2rem;
+  color: var(--secondary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.plan-price span {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 400;
+  margin-left: 0.2rem;
+}
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+  width: 100%;
+}
+.plan-features li {
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+.plan-features li:before {
+  content: '✔';
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+.plan-btn {
+  background: var(--secondary);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(99,204,202,0.10);
+  transition: background 0.2s;
+}
+.plan-btn:hover {
+  background: var(--accent);
+}
+.plan-highlight {
+  border: 2px solid var(--secondary);
+  background: #e6f7f7;
+  box-shadow: 0 4px 24px rgba(99,204,202,0.15);
+}
 @media (max-width: 1024px) {
   .hero-content {
     max-width: 95vw;
