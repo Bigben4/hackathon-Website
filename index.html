@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Orient - AI Roadmap for Students</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
- </header>
+  <header>
+    <h1>Smart Orient</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#impact">Impact</a>
+      <a href="#contact" class="contact-link">Contact</a>
+      <button class="download-btn">Download</button>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content hero-row">
+      <div class="hero-text">
+        <h2>Your Future, Mapped Intelligently</h2>
+        <p>
+          At Smart Orient, our mission is to empower students with AI-driven tools that create personalized study plans, manage academic life, and build smart financial habits—preparing them not just for exams, but for life after school.
+        </p>
+        <button class="cta-button">Get Started</button>
+        <a href="#contact" class="contact-btn">Contact</a>
+      </div>
+      <div class="hero-image">
+        <img src="photos/international-day-education-futuristic-style.jpg" alt="Student studying">
+      </div>
+    </div>
+  </section>
   <main>
-    <section class="features-section">
+    <section class="features-section" id="features">
       <div class="features-title">Features</div>
       <div class="features-list">
         <div class="feature-card">
@@ -40,7 +62,15 @@
         </div>
       </div>
     </section>
-     <section class="testimonials-section">
+    <section class="impact-section" id="impact">
+      <h3>Why Smart Orient Matters</h3>
+      <p>
+        In today’s fast-paced academic world, students often struggle to balance learning, budgeting, and personal growth. Smart Orient is designed to solve this by offering a centralized roadmap tailored to each student’s goals.<br /><br />
+        From AI-generated assignments and optimized study plans to budget tracking and reminders, Smart Orient doesn’t just help students succeed academically—it builds habits that prepare them for real life.<br /><br />
+        Schools benefit too, as students become more focused, financially aware, and career-oriented—creating a smarter, more self-reliant learning environment.
+      </p>
+    </section>
+    <section class="testimonials-section">
       <div class="testimonials-title">What Students Say</div>
       <div class="testimonials-list">
         <div class="testimonial-card">
@@ -60,11 +90,60 @@
     <section class="badge-section">
       <span class="trust-badge">Free for Students – Beta Access Available Now</span>
     </section>
+    <section class="benefits-section">
+      <div class="benefit-row">
+        <div class="benefit-img">
+          <img src="photos/arif-riyanto-G1N9kDHqBrQ-unsplash.jpg" alt="Personalized Study Plans">
+        </div>
+        <div class="benefit-desc">
+          <h4>Personalized Study Plans</h4>
+          <p>Smart Orient creates custom study schedules tailored to your unique academic goals, helping you stay organized and motivated.</p>
+        </div>
+      </div>
+      <div class="benefit-row">
+        <div class="benefit-img">
+          <img src="photos/mahdis-mousavi-hJ5uMIRNg5k-unsplash.jpg" alt="AI-Powered Assignments">
+        </div>
+        <div class="benefit-desc">
+          <h4>AI-Powered Assignments</h4>
+          <p>Our AI helps you brainstorm, organize, and track assignments, making your workload easier to manage and more efficient.</p>
+        </div>
+      </div>
+      <div class="benefit-row">
+        <div class="benefit-img">
+          <img src="photos/alec-favale-QEoRUN-h5PI-unsplash.jpg" alt="Budget & Expense Tracking">
+        </div>
+        <div class="benefit-desc">
+          <h4>Budget & Expense Tracking</h4>
+          <p>Monitor your spending and savings with intuitive tools, so you can focus on your studies without financial stress.</p>
+        </div>
+      </div>
+      <div class="benefit-row">
+        <div class="benefit-img">
+          <img src="photos/george-pagan-iii-4zs2aNnHkec-unsplash.jpg" alt="Career-Oriented Roadmaps">
+        </div>
+        <div class="benefit-desc">
+          <h4>Career-Oriented Roadmaps</h4>
+          <p>Plan your academic journey with career-focused guidance, ensuring you make the right choices for your future.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h3>Contact Us</h3>
+        <p>Have questions or want to get in touch? Fill out the form below and our team will respond soon.</p>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="hero-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
     <section class="final-cta-section">
       <button class="hero-btn">Get Started</button>
     </section>
   </main>
-
   <footer class="footer">
     <div class="footer-links">
       <a href="#">Contact</a> | 
@@ -80,11 +159,6 @@
       &copy; 2025 SmartRoadmap. All rights reserved.
     </div>
   </footer>
-
-
-
-
-
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
