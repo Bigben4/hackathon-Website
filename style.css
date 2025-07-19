@@ -634,9 +634,12 @@ body.dark-mode .contact-btn {
   color: #222 !important;
 }
 body.dark-mode nav a,
-body.dark-mode .download-btn {
-  color: #f6f9f9 !important;
-  background: #232323 !important;
+body.dark-mode .download-btn,
+body.dark-mode .chatbot-btn,
+body.dark-mode .darkmode-btn,
+body.dark-mode .lang-toggle-btn {
+  color: #fff !important;
+  background: #222 !important;
 }
 body.dark-mode nav a.contact-link {
   background: var(--accent) !important;
@@ -867,5 +870,42 @@ body.dark-mode .darkmode-btn {
   .nav-menu {
     top: 2.7rem;
     padding: 0.7rem 0.3rem;
+  }
+}
+nav a, .nav-menu a, .nav-menu button, .download-btn, .chatbot-btn, .darkmode-btn, .lang-toggle-btn {
+  border-radius: 50px !important;
+}
+@media (max-width: 500px) {
+  .nav-menu a, .nav-menu button, .download-btn, .chatbot-btn, .darkmode-btn, .lang-toggle-btn {
+    border-radius: 16px !important;
+  }
+}
+.chatbot-btn {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(90,211,153,0.08);
+}
+.chatbot-btn:hover, .chatbot-btn:focus {
+  background-color: #48b97c;
+  outline: none;
+}
+@media (max-width: 500px) {
+  .chatbot-btn {
+    width: 100%;
+    margin: 0;
+    padding: 0.7rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: left;
+    background: var(--accent);
+    color: #fff;
+    box-shadow: none;
   }
 }

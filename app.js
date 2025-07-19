@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navImpact: 'Impact',
             navContact: 'Contact',
             navDownload: 'Download',
+            navChatbot: 'Chatbot',
             heroTitle: 'Your Future, Mapped Intelligently',
             heroDesc: 'At Smart Orient, our mission is to empower students with AI-driven tools that create personalized study plans, manage academic life, and build smart financial habits—preparing them not just for exams, but for life after school.',
             ctaButton: 'Get Started',
@@ -138,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navImpact: 'Impact',
             navContact: 'Contact',
             navDownload: 'Télécharger',
+            navChatbot: 'Chatbot',
             heroTitle: 'Votre avenir, cartographié intelligemment',
             heroDesc: "Chez Smart Orient, notre mission est d'aider les étudiants avec des outils IA qui créent des plans d'étude personnalisés, gèrent la vie académique et développent de bonnes habitudes financières—pour réussir aux examens et dans la vie.",
             ctaButton: 'Commencer',
@@ -186,6 +188,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('nav-impact').textContent = translations[lang].navImpact;
         document.getElementById('nav-contact').textContent = translations[lang].navContact;
         document.getElementById('nav-download').textContent = translations[lang].navDownload;
+        var chatbotBtn = document.getElementById('chatbotBtn');
+        if (chatbotBtn) chatbotBtn.textContent = '💬 ' + translations[lang].navChatbot;
         var heroTitle = document.querySelector('.hero-text h2');
         if (heroTitle) heroTitle.textContent = translations[lang].heroTitle;
         var heroDesc = document.querySelector('.hero-text p');
